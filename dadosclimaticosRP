@@ -27,3 +27,9 @@ ETP: evapotranspiração potencial (mm)
 precipitacao: precipitação (mm)
 
 DCCH: dias com chuva
+
+#Exemplos:
+
+Box-plot para a temperatura média, de acordo com os meses:
+
+boxplot(clima$tempmedia~clima$mes,xlab="Mês",ylab="Temperatura média")
