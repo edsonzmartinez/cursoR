@@ -1,10 +1,12 @@
 # Dados climáticos de Ribeirão Preto
 
-urlfile="https://raw.githubusercontent.com/edsonzmartinez/cursoR/main/dadosclimaticosRP.csv"
-
-clima <- read.csv(urlfile,head=TRUE,sep=";",dec=",")
-
 Fonte: Centro Integrado de Informações Agrometeorológicas
+
+Leitura dos dados no R:
+=======================
+
+urlfile <- "https://raw.githubusercontent.com/edsonzmartinez/cursoR/main/dadosclimaticosRP.csv"
+clima   <- read.csv(urlfile,head=TRUE,sep=";",dec=",")
 
 Descrição dos dados:
 ====================
@@ -22,6 +24,15 @@ DCCH: dias com chuva
 Exemplos:
 =========
 
-Box-plot para a temperatura média, de acordo com os meses:
+# Eliminando espaços:
+clima$mes <- trimws(clima$mes)
 
+# Caso necessário:
+clima$mes[clima$mes=="marÃ§o"] <- "março"
+
+# Box-plot para a temperatura média, de acordo com os meses:
 boxplot(clima$tempmedia~clima$mes,xlab="Mês",ylab="Temperatura média")
+
+# Box-plot para a temperatura média, ordenando os meses:
+mesesnames <- factor(clima$mes, levels=c("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"))
+boxplot(clima$tempmedia~mesesnames,xlab="Mês",ylab="Temperatura média")
