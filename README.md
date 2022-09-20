@@ -18,28 +18,4 @@ jog <- read.csv(urlfile,head=TRUE,sep=";",dec=",")
 
 * Dados climáticos de Ribeirão Preto
 
-urlfile="https://raw.githubusercontent.com/edsonzmartinez/cursoR/main/dadosclimaticosRP.csv"
-clima <- read.csv(urlfile,head=TRUE,sep=";",dec=",")
-
-Fonte: Centro Integrado de Informações Agrometeorológicas
-
-ano: ano (de 1991 a 2021)
-
-mes: meses
-
-tempmaxabs: temperatura máxima absoluta (oC)
-
-tempminabs: temperatura mínima absoluta (oC)
-
-tempmaxmensal: temperatura máxima mensal (oC)
-
-tempminmensal: temperatura mínima mensal (oC)
-
-tempmedia: temperatura média
-
-ETP: evapotranspiração potencial (mm)
-
-precipitacao: precipitação (mm)
-
-DCCH: dias com chuva
-
+Descrição dos dados: https://github.com/edsonzmartinez/cursoR/blob/main/dadosclimaticosRP
