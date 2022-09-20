@@ -24,13 +24,22 @@ clima <- read.csv(urlfile,head=TRUE,sep=";",dec=",")
 Fonte: Centro Integrado de Informações Agrometeorológicas
 
 ano: ano (de 1991 a 2021)
+
 mes: meses
+
 tempmaxabs: temperatura máxima absoluta (oC)
+
 tempminabs: temperatura mínima absoluta (oC)
+
 tempmaxmensal: temperatura máxima mensal (oC)
-tempmenmensal: temperatura mínima mensal (oC)
-tempmeda: temperatura média
-ETP: (mm)
-precipitacao: (mm)
-DCCH:
+
+tempminmensal: temperatura mínima mensal (oC)
+
+tempmedia: temperatura média
+
+ETP: evapotranspiração potencial (mm)
+
+precipitacao: precipitação (mm)
+
+DCCH: dias com chuva
 
