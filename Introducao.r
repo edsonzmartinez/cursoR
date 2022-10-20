@@ -158,7 +158,7 @@ ls.str()            # detalhes dos objetos ativos
 exists()            # verifica a existência de um objeto na seção atual
 
 a <- c(56,78,98)
-exists("a")
+exists("a") 
 
 ##################################################
 # Notação científica                             #
