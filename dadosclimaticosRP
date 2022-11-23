@@ -42,4 +42,5 @@ install.packages("dygraphs")
 library(dygraphs)
 temprRP <- ts(cbind(clima$tempmedia,clima$tempmaxabs), start = c(1991,1),frequency=12,names=c("Temperatura média","Temperatura máxima absoluta"))
 dygraph(temprRP)
-
+dyRangeSelector(dygraph(temprRP))
+dyOptions(stackedGraph = TRUE,dygraph(temprRP,main = "Temperaturas em Ribeirão Preto"))
