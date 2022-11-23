@@ -44,3 +44,9 @@ temprRP <- ts(cbind(clima$tempmedia,clima$tempmaxabs), start = c(1991,1),frequen
 dygraph(temprRP)
 dyRangeSelector(dygraph(temprRP))
 dyOptions(stackedGraph = TRUE,dygraph(temprRP,main = "Temperaturas em Ribeirão Preto"))
+dygraph(temprRP) %>% dyRangeSelector() %>% dyMultiColumn()
+
+dygraph(temprRP) %>%
+  dyRangeSelector() %>%
+  dyBarSeries('Temperatura média') %>% 
+  dyFilledLine('Temperatura máxima absoluta')
