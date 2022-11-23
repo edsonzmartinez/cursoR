@@ -36,3 +36,10 @@ boxplot(clima$tempmedia~clima$mes,xlab="Mês",ylab="Temperatura média")
 # Box-plot para a temperatura média, ordenando os meses:
 mesesnames <- factor(clima$mes, levels=c("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"))
 boxplot(clima$tempmedia~mesesnames,xlab="Mês",ylab="Temperatura média")
+
+# Gráficos interativos de séries temporais usando o pacote dygraphs
+install.packages("dygraphs")
+library(dygraphs)
+temprRP <- ts(cbind(clima$tempmedia,clima$tempmaxabs), start = c(1991,1),frequency=12,names=c("Temperatura média","Temperatura máxima absoluta"))
+dygraph(temprRP)
+
