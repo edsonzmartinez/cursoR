@@ -2,6 +2,8 @@
 ## Descrição do Projeto
 <p align="left">Repositório de bancos de dados e códigos para a disciplina "Análise Estatística em Estudos em Saúde Utilizando o Programa R"</p>
 
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" width="40" height="40"/>
+
 ## Bancos de dados
 
 **Arquivo Dados02.csv**
