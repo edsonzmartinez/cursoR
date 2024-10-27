@@ -1,4 +1,7 @@
 # cursoR
+
+![](https://img.shields.io/github/languages/code-size/edsonzmartinez/cursoR)
+
 ## Descrição do Projeto
 <p align="left">Repositório de bancos de dados e códigos para a disciplina "Introdução ao R para Pesquisa em Saúde"</p>
 
