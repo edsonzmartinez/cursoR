@@ -16,9 +16,11 @@ w <- read.csv(urlfile,head=TRUE,sep=";",dec=",")
 
 **Dados dos jogadores da África do Sul:**
 
+```
 urlfile="https://raw.githubusercontent.com/edsonzmartinez/cursoR/main/Dados_jogadores.csv"
 
 jog <- read.csv(urlfile,head=TRUE,sep=";",dec=",")
+```
 
 **Dados climáticos de Ribeirão Preto**
 
@@ -26,9 +28,11 @@ Descrição dos dados: https://github.com/edsonzmartinez/cursoR/blob/main/dadosc
 
 **Dados dos caranguejos**
 
+```
 urlfile="https://raw.githubusercontent.com/edsonzmartinez/cursoR/main/crabs.txt"
 
 w <- read.table(urlfile,head=TRUE,sep=",",dec=".")
+```
 
 Se usar estes dados, deve ser citada a fonte:
 
