@@ -2,7 +2,7 @@
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" width="40" height="40"/>
 
-## Função ifelse()
+## Função [ifelse()](http://127.0.0.1:23684/library/base/html/ifelse.html)
 
 ``` 
 # A sintaxe é ifelse(expressão,x,y)
