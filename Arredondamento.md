@@ -28,11 +28,11 @@ x
 
 ## Funções de arredondamento
 
-### Funções ceiling() e floor()
+### Funções [ceiling()](http://127.0.0.1:23684/library/base/html/Round.html) e [floor()](http://127.0.0.1:23684/library/base/html/Round.html)
 
-ceiling(x)    Retorna o menor número inteiro maior que x
+`ceiling(x)`    Retorna o menor número inteiro maior que x
 
-floor(x)      Retorna o maior número inteiro menor que x
+`floor(x)`      Retorna o maior número inteiro menor que x
 
 ```
 # Exemplos
