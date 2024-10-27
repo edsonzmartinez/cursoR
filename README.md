@@ -1,3 +1,5 @@
+![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
+
 # cursoR
 ## Descrição do Projeto
 <p align="left">Repositório de bancos de dados e códigos para a disciplina "Análise Estatística em Estudos em Saúde Utilizando o Programa R"</p>
