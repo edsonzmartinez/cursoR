@@ -42,6 +42,10 @@
  colnames(conf_mat) <- c("Yhat = 1","Yhat = 0")
  rownames(conf_mat) <- c("Y = 1","Y = 0")
  conf_mat
+ # Precision, recall, F1 score
+ precision <- diag(conf_mat) / rowSums(conf_mat) 
+ recall <- diag(conf_mat) / colSums(conf_mat) 
+ F1 <- 2 * (precision * recall) / (precision + recall)
  # ROC curve
  roccurve <- roc(true_y,pred)
  plot(roccurve)
