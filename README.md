@@ -44,3 +44,14 @@ Wolfram Research, "Sample Data: Crab Measures" from the Wolfram Data Repository 
 Campbell, N. A. and Mahon, R. J. Five morphological measurements of two varieties of both sexes of crab species Leptograpsus variegatus from Fremantle, W. Australia. Australian Journal of Zoology, vol. 22, 1974.
 
 https://duch.mimuw.edu.pl/~pokar/StatystykaII/DANE/CampbellMahon.pdf
+
+**Dados dos músicos:**
+
+```
+urlfile="https://raw.githubusercontent.com/edsonzmartinez/cursoR/main/Musicos.csv"
+
+w <- read.csv2(urlfile)
+
+# Codificação de caracteres Windows-1252
+w <- read.csv2(urlfile, fileEncoding =  "Windows-1252")
+```
