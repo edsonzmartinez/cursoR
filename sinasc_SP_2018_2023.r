@@ -1,6 +1,9 @@
+################################################
+# Autor: Edson Zangiacomi Martinez
+# Data: 16/10/2025
+################################################
 
 library(sf)
-library(RColorBrewer)
 
 urlfile="https://raw.githubusercontent.com/edsonzmartinez/cursoR/main/sinasc_SP_2018_2023.csv"
 
@@ -24,7 +27,9 @@ for (k in 1:n) {
   if (sum(ind == 1)) {
    shp$RRAS[k]<- w$RRAS[ind] }}
 
-my_palette <- colorRampPalette(base_palette)(19)
+my_palette <- (c("#fb9a99","#1b9e77","#e6ab02","#e7298a","#d95f02","#66a61e",
+                 "#1b9e77","#e41a1c","#377eb8","#bd0026","#dd1c77","#66c2a5",
+                 "#d4b9da","#006d2c","#238443","#525252","#4d004b","#225ea8","#8c510a"))
 
 RRAS_c <- unique(shp$RRAS)
 
@@ -33,5 +38,6 @@ for (k in 1:n) {
  shp$cor[k] <- my_palette[which(RRAS_c == shp$RRAS[k])] }
  
 plot(shp$geometry, col=shp$cor)
+
 
 
