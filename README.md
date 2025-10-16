@@ -53,5 +53,10 @@ urlfile="https://raw.githubusercontent.com/edsonzmartinez/cursoR/main/Musicos.cs
 w <- read.csv2(urlfile)
 
 # Codificação de caracteres Windows-1252
-w <- read.csv2(urlfile, fileEncoding =  "Windows-1252")
+w <- read.csv2(urlfile, fileEncoding = "Windows-1252")
+
+# Dados duplicados:
+duplicated(w)
+duplicates <- w[duplicated(w), ]
+wnew <- w[!duplicated(w),]
 ```
