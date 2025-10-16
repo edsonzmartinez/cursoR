@@ -59,4 +59,8 @@ w <- read.csv2(urlfile, fileEncoding = "Windows-1252")
 duplicated(w)
 duplicates <- w[duplicated(w), ]
 wnew <- w[!duplicated(w),]
+
+# Quantos músicos tocam violão?
+sum(grepl("violão",w$Instrumentos))
+
 ```
