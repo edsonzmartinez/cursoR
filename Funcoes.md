@@ -4,7 +4,7 @@
 
 ## Função [ifelse()](http://127.0.0.1:23684/library/base/html/ifelse.html)
 
-``` 
+```r 
 # A sintaxe é ifelse(expressão,x,y)
 
 # Exemplo 1
@@ -13,7 +13,7 @@ nota2 <- 6
 ifelse(nota1>nota2,"A nota 1 é maior","A nota 1 não é maior")
 ```
 
-``` 
+```r 
 # Exemplo 2
 a <- c(8,34,8,4,7,5,9,5,3,6,3,6)
 b <- ifelse(a %% 2 == 0,"par","ímpar")
@@ -21,7 +21,7 @@ b <- ifelse(a %% 2 == 0,"par","ímpar")
 
 ## Função if()
 
-```
+```r
 ​nota1 <- 9
 nota2 <- 6
 if (nota1>nota2) {"A nota 1 é maior"} else
@@ -29,7 +29,7 @@ if (nota1>nota2) {"A nota 1 é maior"} else
 ```
 ## Função cat()
 
-```
+```r
 a <- c(8,34,8,4,7,5,9,5,3,6,3,6)
 cat(a)
 cat(a,"\n")
@@ -39,7 +39,7 @@ cat("Arroz","Feijão","\n",sep="---")
 
 ## Criando funções
 
-``` 
+```r 
 # Exemplo 1
 
 IMC <- function(peso,estatura) {
@@ -55,7 +55,7 @@ IMC <- function(peso,estatura) {
 }
 ```
 
-```
+```r
 # Lembrar que, no R, há sempre muitas formas de escrevermos uma
 # função com o mesmo propósito:
 
@@ -74,7 +74,7 @@ cat(clas,"\n")
 }
 ```
 
-```
+```r
 # Exemplo 2
 # Usando a função stopifnot()
 
@@ -85,20 +85,20 @@ IMCcalc <- function(peso,estatura) {
 }
 ```
 
-```
+```r
 a <- IMCcalc(90,1.89)
 a
 ```
 
 [1] 25.19526
 
-```
+```r
 IMCcalc(250,1.34)
 ```
 ​
 Erro: peso < 200 is not TRUE
 
-```
+```r
 ​# Exemplo 3
 
 # Usando a função warning()
@@ -110,7 +110,7 @@ IMC <- peso/(estatura*estatura)
 }
 ```
 
-```
+```r
 IMCcalc(80,134)
 ```
 
@@ -120,7 +120,7 @@ Warning message:
 
 In IMCcalc(80, 134) : Confira se a estatura está expressa em centímetros
 
-``` 
+```r 
 # Exemplo 4
 
 # Usando a função readline()
@@ -134,7 +134,7 @@ IMCcalc <- function() {
 }
 ```
 
-```
+```r
 # Exemplo 5
 
 describe <- function(variab,grupo,data,ndec=2) {
